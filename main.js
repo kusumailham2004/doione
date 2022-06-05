@@ -115,3 +115,17 @@
     
 })(jQuery);
 
+
+
+// Cover
+const closeCover = document.querySelector(".close-cover");
+const cover = document.querySelector(".cover1");
+const coverContainer = document.querySelector(".cover-container");
+
+closeCover.addEventListener("click", () => {
+  setTimeout(() => {
+    cover.classList.add("hide");
+  }, 800);
+  coverContainer.classList.add("hide");
+});
+

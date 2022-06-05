@@ -19,6 +19,45 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
 </head>
 <body>
+
+
+    <!-- Cover start -->
+    <div class="cover cover1">
+        <div class="cover-container">
+          <div class="cover-content">
+            <div class="group">
+              <div class="box">
+                <p>Kepada YTH</p>
+                <div class="nama-tamu">
+                  <p>Bapak/Ibu/Saudara/i</p>
+                  <div class="namapenerima">IBU Dewi</div>
+                  <p>Di Makasar</p>
+                </div>
+                <p>Kami Turut mengundang anda untuk hadir dalam acara pernikahan kami</p>
+                <div class="nama" >Romeo & Juliet <br/> <p style="color: #0B6C6C; font-size: 18px;">23 september 2021</p></div>
+                <div class="btn_gift close-cover"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Open    <i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+        // Cover
+        const closeCover = document.querySelector(".close-cover");
+        const cover = document.querySelector(".cover1");
+        const coverContainer = document.querySelector(".cover-container");
+
+        closeCover.addEventListener("click", () => {
+        setTimeout(() => {
+            cover.classList.add("hide");
+        }, 800);
+        coverContainer.classList.add("hide");
+        });
+    </script>
+    <!-- cover end -->
+
+
+
     <!-- halaman 1 start  -->
     <div class="halaman1" id="home">
         <div class="container">
@@ -100,7 +139,7 @@
 
 
 
-    <section>
+    <section class="bagian1"> 
         <!-- halaman4 start -->
         <div class="halaman4" id="halaman4" >
             <h1 class="text-center">Countdown Acara</h1>
@@ -184,7 +223,7 @@
         <div class="story" data-aos="fade-up" id="story">
             <div class="heading3">Story Love</div>
             <div class="box row" id="slide1" >
-            <img class="img-fluid" src="img\Pengantin\galery\Ct.png" alt="" />
+            <img class="img-fluid" src="img\Pengantin\Ct.png" alt="" />
             <div class="text">
                 <div class="heading4">Pertama Bertemu</div>
                     <p>
@@ -195,7 +234,7 @@
             </div>
             <div class="box hidden row" id="slide2" data-aos="fade-up">
                 <!-- ukuran gambar harus sama dengan yang dibawah, harus sesuai dengan px gambar dibawah -->
-            <img class="img-fluid" src="img\Pengantin\galery\Ct.png" alt="" />
+            <img class="img-fluid" src="img\Pengantin\Ct.png" alt="" />
             <div class="text">
                 <div class="heading4">Menyatakan Cinta</div>
                     <p>
@@ -205,7 +244,7 @@
             </div>
             </div>
             <div class="box hidden row" id="slide3" data-aos="fade-up">
-            <img class="img-fluid" src="img\Pengantin\galery\Ct.png" alt="" />
+            <img class="img-fluid" src="img\Pengantin\Ct.png" alt="" />
             <div class="text">
                 <div class="heading4">Tunangan</div>
                     <p>
@@ -267,11 +306,15 @@
                 </div>
             </div>
         </div>
+    </section>
 
 
 
 
 
+
+
+    <section class="bagian2">
         <!-- halaman9 start-->
         <div class="halaman9" id="halaman9" data-aos="fade-up">
             <h1 class="text-center" style="color: white;">Buku Tamu</h1>
@@ -303,7 +346,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                      <a href=""><button class="btn btn-secondary d-flex justify-content-center" type="submit">Kirim</button></a>
+                      <a href=""><button class="btn btn-secondary d-flex justify-content-center" type="submit"><i class="fa fa-send d-flex align-items-center" style="margin-right: 10px;" aria-hidden="true" class="text-center" ></i>         Kirim</button></a>
                     </div>
                   </form>
             </div>
@@ -311,42 +354,41 @@
 
 
 
-
-
         <!-- halaman10 start-->
         <div class="halaman10">
             <div class="container" data-aos="fade-up">
                 <div class="card10">
-                    <div class="user10"><img src="img\comment\Ellipse 3.png" alt=""></div>
+                    <div class="user10"><img src="img/icon/commen.png" alt=""></div>
                     <div class="content10">
                         <h2>Lukman Nulhakim</h2>
                         <p>29 February 2021</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur praesentium assumenda, porro aliquid sunt soluta inventore placeat maiores blanditiis laboriosam vitae magni eos dolorum sapiente et ratione voluptatem ipsam.</p>
                     </div>
                 </div>
+                <div class="card11">
+                    <div class="content10">
+                        <h2>Lukman Nulhakim</h2>
+                        <p>29 February 2021</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur praesentium assumenda, porro aliquid sunt soluta inventore placeat maiores blanditiis laboriosam vitae magni eos dolorum sapiente et ratione voluptatem ipsam.</p>
+                    </div>
+                    <div class="user10 img-fluid"><img src="img/icon/commen.png" alt=""></div>
+                </div>
                 <div class="card10">
-                    <div class="user10 img-fluid"><img src="img\comment\Ellipse 3.png" alt=""></div>
+                    <div class="user10 img-fluid"><img src="img/icon/commen.png" alt=""></div>
                     <div class="content10">
                         <h2>Lukman Nulhakim</h2>
                         <p>29 February 2021</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur praesentium assumenda, porro aliquid sunt soluta inventore placeat maiores blanditiis laboriosam vitae magni eos dolorum sapiente et ratione voluptatem ipsam.</p>
                     </div>
                 </div>
-                <div class="card10">
-                    <div class="user10 img-fluid"><img src="img\comment\Ellipse 3.png" alt=""></div>
+                <div class="card11">
+                    
                     <div class="content10">
                         <h2>Lukman Nulhakim</h2>
                         <p>29 February 2021</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur praesentium assumenda, porro aliquid sunt soluta inventore placeat maiores blanditiis laboriosam vitae magni eos dolorum sapiente et ratione voluptatem ipsam.</p>
                     </div>
-                </div>
-                <div class="card10">
-                    <div class="user10 img-fluid"><img src="img\comment\Ellipse 3.png" alt=""></div>
-                    <div class="content10">
-                        <h2>Lukman Nulhakim</h2>
-                        <p>29 February 2021</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur praesentium assumenda, porro aliquid sunt soluta inventore placeat maiores blanditiis laboriosam vitae magni eos dolorum sapiente et ratione voluptatem ipsam.</p>
-                    </div>
+                    <div class="user10 img-fluid"><img src="img/icon/commen.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -365,9 +407,10 @@
             </div>
             <div class="footer">
                 <p>Design By</p>
-                <img src="img\icon\Group 105.png" alt="">
+                <img src="img\icon\doi.png" alt="">
             </div>
         </div>
+
     </section>
     
 

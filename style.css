@@ -16,6 +16,163 @@
   /* border: 1px solid red; */
 }
 
+/* background */
+.bagian1{
+    background-image: url(img/background/Desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bagian2{
+    background-image: url(img/background/bagian2.svg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+
+
+
+/* cover start */
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+    z-index: 99;
+  }
+  
+  .cover .cover-container {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease 0.3s;
+  }
+  
+  .cover .cover-container .cover-content {
+    background-image: url(img/background/background1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+  }
+  
+  .cover .cover-container .cover-content .group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cover .cover-container .cover-content .group .box {
+    /* background-image: url(../../img/theme/cover.png); */
+    /* background-position: center;
+    background-size: cover; */
+    background: rgba(180, 190, 176, 0.86);
+    border: 2px solid rgba(255, 255, 255, 0.38);
+    box-shadow: 0px 8px 32px rgba(168, 93, 247, 0.25);
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+    width: 400px;
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+  }
+  .cover .cover-container .cover-content .group .box-variasi {
+    background-color: red;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    z-index: 1;
+    transform: rotate(-10deg);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  }
+  .cover-content .group .box p {
+    color: black;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+  .cover-content .group .box .nama-tamu .namapenerima{
+    margin-top: -20px;
+    color: black;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+  .cover-content .group .box .nama {
+      margin-bottom: 10%;
+    font-family: 'Petemoss', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #561E1E;
+
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+  .cover-content .group .box .nama-tamu {
+    /* border: 2px solid #613838; */
+    padding: 10px;
+    max-width: 400px;
+  }
+  
+  .hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .cover .cover-container.hide {
+    transform: scale(0);
+    transform: translateX(-10%);
+  }
+  .btn_gift {
+    background: #3B7474;
+    /* border: 1px solid #ffffff; */
+    box-sizing: border-box;
+    /* box-shadow: inset 9px 9px 7px rgba(0, 0, 0, 0.25); */
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Fjalla One", sans-serif;
+    transition: 0.5s all;
+    margin: -20px;
+    z-index: 3;
+  }
+  .btn_gift:hover {
+    cursor: pointer;
+    box-shadow: inset -9px -9px 7px rgba(0, 0, 0, 0.25);
+  }
+  /* cover end */
+
+
+
+
+
 
 /* halaman 1 start  */
 .halaman1{
@@ -59,6 +216,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+    padding-top: 15px;
     
     background: rgba(196, 196, 196, 0.77);
     border: 1px solid rgba(59, 116, 116, 0.49);
@@ -269,13 +427,7 @@ line-height: 94px;
 
 
 
-section{
-    background-image: url(img/background/Desktop.png);
-    background-position: center;
-    background-repeat: repeat
-    ;
-    
-}
+
 
 .halaman4{
     height: auto;
@@ -283,15 +435,17 @@ section{
     padding-bottom: 30px;
 }
 .halaman4 .text-center{
-    text-align: center;
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Petemoss', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-    line-height: 161px;
-    /* identical to box height */
-
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: -0.02em;
     text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
 }
 .halaman4 .container{
     display: block;
@@ -326,7 +480,7 @@ section{
     margin-top: 40px;
 }
 .halaman4 .container .button-card4{
-    background: #544553;
+    background: #3B7474;
     width: 40%;
     border-radius: 10px;
     padding-top: 10px;
@@ -367,15 +521,17 @@ section{
     padding-bottom: 30px;
 }
 .halaman5 .text-center{
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Petemoss', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-    line-height: 161px;
-/* identical to box height */
+    font-size: 100px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
 
+    color: #FFFFFF;
 
-    color: #544553;
+    /* border: 1px solid #3B7474; */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
 }
 .halaman5 .container{
     width: 90%;
@@ -429,14 +585,17 @@ section{
     border-radius: 15px;
 }
 .halaman6 .container .card6 h1{
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Petemoss', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-/* identical to box height */
+    font-size: 100px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
 
+    color: #FFFFFF;
 
-    color: #544553;
+    /* border: 1px solid #3B7474; */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
 }
 @media screen and (max-width: 550px){
     .halaman6 .container .card6 h1{
@@ -464,13 +623,17 @@ section{
     z-index: 1;
   }
   .story .heading3{
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Petemoss', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-    line-height: 161px;
-/* identical to box height */
-    color: white;
+    font-size: 100px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    /* border: 1px solid #3B7474; */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
     margin-bottom: -5%;
   }
   
@@ -479,9 +642,9 @@ section{
     display: flex;
     width: 60%;
     height: 50%;
-    background: rgba(255, 255, 255, 0.29);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0px 36px 60px rgba(168, 93, 247, 0.25);
+    background: #6CC5C5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     backdrop-filter: blur(4px);
     transition: 1s all;
     animation: up 1s forwards ease-in-out;
@@ -696,14 +859,17 @@ border: 1px solid rgba(8, 84, 84, 0.02);
     overflow: hidden;
 }
 .halaman9 .text-center{
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Petemoss', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-/* identical to box height */
+    font-size: 100px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
 
+    color: #FFFFFF;
 
-    color: #544553;
+    /* border: 1px solid #3B7474; */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
 }
 .halaman9 .container {
     width: 70%;
@@ -784,9 +950,27 @@ backdrop-filter: blur(4px);
     margin-left: 6%;
     display: flex;
     font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid red;
+    color: white;
+}
+.halaman10 .container .card11{
+    text-align: right;
+    margin-right: 6%;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid red;
+    color: white;
+}
+.halaman10 .container .card11 .user10{
+    margin-left: 7%;
+    margin-top: 5px;
 }
 .halaman10 .container .card10 .user10{
     margin-right: 7%;
+    margin-top: 5px;
+}
+.halaman10 .container .card10 .content10{
+    margin-top: 5px;
 }
 .halaman10 .container .card10 .content10 h2{
     font-size: 20px;
@@ -795,8 +979,22 @@ backdrop-filter: blur(4px);
 .halaman10 .container .card10 .content10 p{
     font-size: 15px;
 }
+
+.halaman10 .container .card11 .content10{
+    margin-top: 5px;
+}
+.halaman10 .container .card11 .content10 h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.halaman10 .container .card11 .content10 p{
+    font-size: 15px;
+}
 @media screen and (max-width: 550px){
     .halaman10 .container .card10 .user10 img{
+        width: 60px;
+    }
+    .halaman10 .container .card11 .user10 img{
         width: 60px;
     }
 }
@@ -814,14 +1012,17 @@ backdrop-filter: blur(4px);
     padding-bottom: 50px;
 }
 .halaman11 .text-center{
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Petemoss', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-/* identical to box height */
+    font-size: 100px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
 
+    color: #FFFFFF;
 
-    color: #544553;
+    /* border: 1px solid #3B7474; */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
 }
 .halaman11 .container {
     font-family: 'Poppins', sans-serif;

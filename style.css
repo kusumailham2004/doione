@@ -325,6 +325,31 @@
         font-size: 30px;
     }
     .halaman1 .container .siapa h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .halaman1 .container .tanggal h3{
+        font-size: 25px;
+    }
+}
+/* @media screen and (max-width: 480px){
+    .halaman1 .container .judul h3{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .halaman1 .container .siapa h1{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .halaman1 .container .tanggal h3{
+        font-size: 15px;
+    }
+} */
+@media screen and (max-width: 850px){
+    .halaman1 .container .judul h3{
+        font-size: 30px;
+    }
+    .halaman1 .container .siapa h1{
         font-size: 55px;
         font-weight: 500;
     }
@@ -461,7 +486,7 @@ line-height: 94px;
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .halaman3 .container .row .card3 .button-card3 {
@@ -469,7 +494,8 @@ line-height: 94px;
     text-decoration: none;
 }
 .halaman3 .container .row .card3 .button-card3:hover{
-    background: radial-gradient(136.32% 136.32% at 50% 50%, #830056 0%, #FF00D6 100%);
+    background-color: #3B7474;
+    color: yellow;
 }
 /* halaman 3 end */
 
@@ -540,7 +566,7 @@ line-height: 94px;
     margin-top: 40px;
 }
 .halaman4 .container .button-card4{
-    background: #3B7474;
+    background: #4ca7a7;
     width: 40%;
     border-radius: 10px;
     padding-top: 10px;
@@ -550,7 +576,8 @@ line-height: 94px;
     color: #fff;
 }
 .halaman4 .container .button-card4:hover{
-    background: radial-gradient(136.32% 136.32% at 50% 50%, #830056 0%, #FF00D6 100%);
+    background-color: #3B7474;
+    color: yellow;
 }
 .halaman4 .container .button4 .content-button4 h3{
     color: #fff;
@@ -700,8 +727,8 @@ line-height: 94px;
   .story .box {
     border-radius: 20px;
     display: flex;
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 30%;
     background: #6CC5C5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -762,7 +789,7 @@ line-height: 94px;
   }
   .story .list .heading6 {
     margin-right: 10px;
-    background-color: #544553;
+    background-color: #017a83;
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
@@ -809,6 +836,7 @@ line-height: 94px;
 
 
 
+
 /* halaman 8 start */
 .halaman8{
     height: auto;
@@ -830,6 +858,11 @@ line-height: 94px;
     position: absolute;
     top: -40px;
     left: -60px;
+}
+.halaman8 .container .box-ayat .hal8-icon-atas-bawah{
+    position: absolute;
+    bottom: -60px;
+    right: -50px;
 }
 .halaman8 .container .box-ayat .p-2{
     margin-left: 7%;
@@ -971,8 +1004,21 @@ backdrop-filter: blur(4px);
     padding-bottom: 30px;
     border-radius: 20px;
 }
+.halaman10 .container .hal10-icon-atas-kiri{
+    position: absolute;
+    top: -90px;
+    left: -90px;
+    width: 20%;
+}
+.halaman10 .container .hal10-icon-bawah-kanan{
+    position: absolute;
+    bottom: -90px;
+    right: -80px;
+    width: 20%;
+}
 .halaman10 .container .card10{
-    margin-left: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid white;
@@ -980,7 +1026,8 @@ backdrop-filter: blur(4px);
 }
 .halaman10 .container .card11{
     text-align: right;
-    margin-right: 6%;
+    margin-right: 10%;
+    margin-left: 10%;
     display: flex;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid white;
@@ -1015,6 +1062,22 @@ backdrop-filter: blur(4px);
 .halaman10 .container .card11 .content10 p{
     font-size: 15px;
 }
+@media screen and (max-width: 400px){
+    .halaman10 .container .hal10-icon-atas-kiri{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        visibility: hidden;
+    }
+    .halaman10 .container .hal10-icon-bawah-kanan{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20%;
+        visibility: hidden;
+    }
+}
 @media screen and (max-width: 550px){
     .halaman10 .container .card10 .user10 img{
         width: 60px;
@@ -1022,8 +1085,33 @@ backdrop-filter: blur(4px);
     .halaman10 .container .card11 .user10 img{
         width: 60px;
     }
+    .halaman10 .container .hal10-icon-atas-kiri{
+        position: absolute;
+        top: -30px;
+        left: -40px;
+        width: 20%;
+    }
+    .halaman10 .container .hal10-icon-bawah-kanan{
+        position: absolute;
+        bottom: -30px;
+        right: -20px;
+        width: 20%;
+    }
 }
-
+@media screen and (max-width: 768px){
+    .halaman10 .container .hal10-icon-atas-kiri{
+        position: absolute;
+        top: -40px;
+        left: -50px;
+        width: 20%;
+    }
+    .halaman10 .container .hal10-icon-bawah-kanan{
+        position: absolute;
+        bottom: -40px;
+        right: -30px;
+        width: 20%;
+    }
+}
 
 
 
